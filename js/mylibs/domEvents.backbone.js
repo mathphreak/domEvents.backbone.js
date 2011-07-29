@@ -1,8 +1,8 @@
-(function(root, $) {
+(function() {
 	var use = function(obj) {
 		_.extend(obj, Backbone.Events);
 		
-		$(obj).keydown(function(e) {
+		jQuery(obj).keydown(function(e) {
 			obj.trigger("key", e);
 			obj.trigger("key:down", e);
 		}).keypress(function(e) {
@@ -80,8 +80,8 @@
 		});
 	};
 	
-	root.use = this.use = function() {
+	this.use = function() {
 		var args = _.toArray(arguments);
 		_.each(args, use);
 	}
-}).call(this, jQuery);
+}).call(this);

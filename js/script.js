@@ -1,8 +1,9 @@
-var targetElement = $("#target-element").get(0);
-use(targetElement);
-targetElement.bind("mouse", function(event) {
-	alert(typeof event); // should be jQuery.Event
-	alert(event.type);
+$(function() {
+	use(window);
+	window.bind("key", function(event) {
+		// event is a first-class jQuery.Event, with all the requisite properties.
+		alert(event.type);
+	});
 });
 
 

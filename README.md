@@ -5,9 +5,8 @@ Wraps events on DOM objects with Backbone.Events, using jQuery to detect them.
 
 Example
 -------
-	var targetElement = $("#target-element").get(0); // returns a real DOM element
-	use(targetElement);
-	targetElement.bind("mouse", function(event) {
+	use(window);
+	window.bind("key", function(event) {
 		alert(typeof event); // should be jQuery.Event
 		alert(event.type);
 	});
