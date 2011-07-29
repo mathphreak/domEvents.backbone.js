@@ -214,6 +214,7 @@ table { border-collapse: collapse; border-spacing: 0; }
    ========================================================================== */
 
 #target-element {
+	position: fixed;
 	left: 40%;
 	top: 40%;
 	border: 2px solid black;
@@ -222,6 +223,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 	-webkit-border-radius: 4px;
 	-o-border-radius: 4px;
 	background-color: yellow;
+	z-index: 4;
 }
 
 
