@@ -80,7 +80,7 @@
 		});
 	};
 	
-	root.use = function() {
+	root.use = this.use = function() {
 		var args = _.toArray(arguments);
 		_.each(args, use);
 	}

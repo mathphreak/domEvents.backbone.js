@@ -210,10 +210,19 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 /* =============================================================================
    Primary styles
-   Author: 
+   Author: mathphreak
    ========================================================================== */
 
-
+#target-element {
+	left: 40%;
+	top: 40%;
+	border: 2px solid black;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-o-border-radius: 4px;
+	background-color: yellow;
+}
 
 
 
