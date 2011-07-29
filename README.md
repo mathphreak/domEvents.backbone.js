@@ -7,8 +7,8 @@ Example
 -------
 	use(window);
 	window.bind("key", function(event) {
-		alert(typeof event); // should be jQuery.Event
-		alert(event.type);
+		// event is a first-class jQuery.Event, with all the requisite properties.
+		alert(event.type); // could return keydown, keypress, or keyup.
 	});
 
 Live Demo
